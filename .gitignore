@@ -1,0 +1,10 @@
+# Ignore bundler config.
+/.bundle
+/vendor/bundle/*
+
+# Ignore all logfiles and tempfiles.
+!/tmp/.gitkeep
+/tmp/*
+
+# Ignore My file
+MyApp/
