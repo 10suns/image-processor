@@ -1,9 +1,0 @@
-docker run \
-    -e AWS_S3_BUCKET_NAME='workshop-upload-files' \
-    -e AWS_S3_OBJECT_PATH='upload/1/test_file.jpg' \
-    -e AWS_S3_OUTPUT_OBJECT_PATH='upload/1/123test.png' \
-    -e AWS_S3_ACCESS_KEY_ID='AKIAWOX74RQCL6XWEQ4N' \
-    -e AWS_S3_SECRET_ACCESS_KEY='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' \
-    -e AWS_S3_REGION='us-east-1' \
-    -e IMAGEMAGICK_OPTIONS='[[\"resize\",\"250x200\"],[\"rotate\",\"-90\"],\"flip\"]' \
-    image_processor
