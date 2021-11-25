@@ -6,6 +6,7 @@ ruby '3.0.2'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
+gem 'airbrake-ruby'
 gem 'aws-sdk-s3'
 gem 'dotenv'
 gem 'mini_magick'

@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    airbrake-ruby (6.0.1)
+      rbtree3 (~> 0.5)
     ast (2.4.2)
     aws-eventstream (1.1.1)
     aws-partitions (1.489.0)
@@ -25,6 +27,7 @@ GEM
     parser (3.0.2.0)
       ast (~> 2.4.1)
     rainbow (3.0.0)
+    rbtree3 (0.6.0)
     regexp_parser (2.1.1)
     rexml (3.2.5)
     rubocop (1.19.1)
@@ -45,6 +48,7 @@ PLATFORMS
   x86_64-darwin-18
 
 DEPENDENCIES
+  airbrake-ruby
   aws-sdk-s3
   dotenv
   mini_magick

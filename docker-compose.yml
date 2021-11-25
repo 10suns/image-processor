@@ -1,0 +1,7 @@
+version: '3'
+services:
+  imagemagick-ruby:
+    container_name: imagemgick-ruby
+    build:
+      context: .
+      dockerfile: "Dockerfile"
