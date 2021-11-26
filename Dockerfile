@@ -14,7 +14,7 @@ RUN gem install bundle && \
     bundle install
 COPY . /imagemagick-worker/
 
-COPY ./entrypoint-dev.sh /usr/bin/entrypoint.sh
+COPY ./entrypoint.sh /usr/bin/entrypoint.sh
 RUN chmod +x /usr/bin/entrypoint.sh
 
 CMD ["entrypoint.sh"]
