@@ -13,7 +13,7 @@ ARGV.each do |arg|
   arg_arr = arg.split('=')
   args[arg_arr[0]] = arg_arr[1]
 end
-
+logger = Logger.new($stdout)
 logger.info("#{args['aws_s3_bucket_name']}/#{args['aws_s3_secret_access_key']}")
 # s3_client = Aws::S3::Client.new(
 #   region: args['aws_s3_region'],
