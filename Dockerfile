@@ -9,7 +9,7 @@ RUN apt-get update -qq && \
 RUN mkdir /imagemagick-worker
 WORKDIR /imagemagick-worker
 COPY Gemfile /imagemagick-worker/Gemfile
-COPY Gemfile /imagemagick-worker/Gemfile.lock
+COPY Gemfile.lock /imagemagick-worker/Gemfile.lock
 RUN gem install bundle && \
     bundle install
 COPY . /imagemagick-worker/
